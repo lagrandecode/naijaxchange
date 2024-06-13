@@ -29,13 +29,12 @@ nav ul li a {
     font-size: 16px;
 }
 
-.download {
-    display: flex;
+.account {
     align-items: center;
     gap: 10px;
 }
 
-.download button {
+.account button {
     background-color: #00a36c;
     color: #fff;
     border: none;
@@ -44,9 +43,6 @@ nav ul li a {
     cursor: pointer;
 }
 
-.download .flag img {
-    width: 24px;
-}
 
 .hero {
     text-align: center;
