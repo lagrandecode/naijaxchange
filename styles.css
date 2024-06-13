@@ -1,0 +1,123 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    background-color: #f4f0e4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    color: #00a36c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.download button {
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download .flag img {
+    width: 24px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.hero .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero .input-group {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hero .input-group img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.hero .input-group input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.hero button {
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .images {
+    position: relative;
+}
+
+.hero .left-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+}
+
+.hero .right-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+}
