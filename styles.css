@@ -112,7 +112,7 @@ nav ul li a {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 400px;
+    width: 450px;
 }
 
 .hero .right-image {
@@ -120,4 +120,5 @@ nav ul li a {
     right: 0;
     bottom: 0;
     width: 250px;
+
 }
