@@ -11,6 +11,7 @@ header {
     padding: 20px 50px;
     background-color: #f8e0e0;
 }
+/*  */
 
 .logo {
     font-size: 24px;
@@ -56,8 +57,10 @@ nav ul li a {
 
 .hero {
     text-align: center;
+    justify-content: space-between;
     /* padding: 50px 20px; */
-    position: relative;
+    /* position: relative; */
+    display: flex;
     padding-top: 150px;
 }
 
@@ -129,5 +132,27 @@ nav ul li a {
     right: 0;
     bottom: 0;
     width: 150px;
+
+}
+
+.price{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 100px;
+    margin-bottom: 100px; 
+    margin-top: 10px;
+    position: absolute;
+    /* width: 450px; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    
+
+}
+
+.price :hover{
 
 }
