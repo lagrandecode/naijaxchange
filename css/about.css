@@ -165,3 +165,28 @@ nav ul li a {
     background-color: #f0f0f0;
 
 }
+
+.about-section {
+    text-align: center;
+    /* background: linear-gradient(to bottom, #e7f0f2 0%, #d3d3d3 100%); */
+    padding: 50px;
+}
+
+.about-section h4 {
+    font-size: 24px;
+    color: #00a36c;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.about-section img {
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
