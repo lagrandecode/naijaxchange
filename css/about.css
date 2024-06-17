@@ -1,0 +1,167 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    background-color: #ffe7a5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8e0e0;
+}
+
+header:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
+/*  */
+
+.logo {
+    font-size: 24px;
+    color: #00a36c;
+    text-decoration: none;
+}
+
+.logo a{
+    font-size: 24px;
+    color: #00a36c;
+    text-decoration: none;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.account {
+    align-items: center;
+    gap: 10px;
+}
+
+.account button {
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.hero {
+    text-align: center;
+    justify-content: space-between;
+    /* padding: 50px 20px; */
+    /* position: relative; */
+    display: flex;
+    padding-top: 150px;
+}
+
+.hero .content {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero .input-group {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hero .input-group img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.hero .input-group input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.hero button {
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .images {
+    position: relative;
+}
+
+.hero .left-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 730px;
+}
+
+.hero .right-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+
+}
+
+.price{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 100px;
+    margin-bottom: 100px; 
+    margin-top: 10px;
+    position: absolute;
+    /* width: 450px; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    
+
+}
+
+.price:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+
+}
