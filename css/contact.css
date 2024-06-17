@@ -1,0 +1,129 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    background-color: #a5bdff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8e0e0;
+}
+
+header:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
+/*  */
+
+.logo {
+    font-size: 24px;
+    color: #00a36c;
+    text-decoration: none;
+}
+
+.logo a{
+    font-size: 24px;
+    color: #00a36c;
+    text-decoration: none;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.account {
+    align-items: center;
+    gap: 10px;
+}
+
+.account button {
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    align-items: center;
+    border-radius: 5px;
+    /* margin: 0; */
+    /* height: 100vh; */
+    padding: 20px;
+    width: 500px;
+}
+
+section{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.account {
+    align-items: center;
+    gap: 10px;
+}
+
+.account button {
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+}
+

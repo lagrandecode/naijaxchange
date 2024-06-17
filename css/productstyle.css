@@ -11,6 +11,12 @@ header {
     padding: 20px 50px;
     background-color: #f8e0e0;
 }
+
+header:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
 /*  */
 
 .logo {
@@ -153,6 +159,9 @@ nav ul li a {
 
 }
 
-.price :hover{
+.price:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
 
 }
