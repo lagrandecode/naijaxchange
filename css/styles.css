@@ -117,6 +117,9 @@ nav ul li a {
     width: 400px; /* Adjust width as needed */
 }
 
+
+
+
 /* Media Queries */
 @media (max-width: 1200px) {
     .hero {
