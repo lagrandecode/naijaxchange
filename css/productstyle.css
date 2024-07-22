@@ -72,12 +72,14 @@ nav ul li a {
     align-items: center;
     flex-direction: column;
     padding: 50px 20px;
+
 }
 
 .hero .content {
     max-width: 600px;
     text-align: center;
     margin-bottom: 30px;
+    animation: flyInLeft 1s ease-out forwards;
 }
 
 .hero h1 {
@@ -134,12 +136,38 @@ nav ul li a {
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 30px;
+    animation: flyInRight 1s ease-out forwards;
 }
 
 .price:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: #f0f0f0;
+}
+
+
+
+/* Keyframes for animations */
+@keyframes flyInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flyInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Media Queries */
