@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lottie Animation</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+  <link rel="stylesheet" href="/css/about.css">
   <style>
     /* Optional CSS for styling */
     #lottie-container {
@@ -16,6 +17,18 @@
   </style>
 </head>
 <body>
+    <header>
+        <div class="logo"><a href="/home.html">Naijaxchange</a></div>
+
+        <nav>
+            <ul>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
   <div id="lottie-container"></div>
   <script>
     // Load the Lottie animation
@@ -24,7 +37,7 @@
       renderer: 'svg', // the rendering engine to use (svg, canvas, html)
       loop: true, // whether to loop the animation
       autoplay: true, // whether to start the animation automatically
-      path: 'images/Animation.json' // the path to your Lottie JSON file
+      path: 'https://lottie.host/bc3380ef-b469-4561-9f1d-870dce754c23/dL4PupQ7wD.json' // the path to your Lottie JSON file
     });
   </script>
 </body>

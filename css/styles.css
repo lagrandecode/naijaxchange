@@ -72,6 +72,7 @@ nav ul li a {
 .hero .content {
     max-width: 600px;
     text-align: left;
+    animation: flyInLeft 1s ease-out forwards;
 }
 
 .hero h1 {
@@ -121,6 +122,7 @@ nav ul li a {
 
 .hero .images {
     flex-shrink: 0;
+    animation: flyInRight 1s ease-out forwards;
 }
 
 .hero .left-image {
@@ -132,6 +134,29 @@ footer {
     padding: 10px;
     background-color: #f8e0e0;
     margin-top: auto;
+}
+
+/* Keyframes for animations */
+@keyframes flyInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flyInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1200px) {

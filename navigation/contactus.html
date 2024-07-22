@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images\logo.jpeg"/>
+    <link rel="icon" type="image/png" href="images/logo.jpeg"/>
 </head>
 <body>
     <header>
@@ -24,31 +24,30 @@
     </header>
     <main>
         <section class="hero">
-            <!-- <div class="content">
-                <h1>International money transfer at zero fee from Canada to Nigeria</h1>
-                <p>No charges required!</p>
-                <div class="account">
-                    <button>Create Account</button>
-                </div>
-                
-            </div> -->
             <div class="container">
-                <form action="/action_page.php">
+                <form id="contactForm" action="/action_page.php">
                   <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                  
                   <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  <label for="Email">Email</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                  
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your Email.." required>
+                  
                   <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
               
-                  <a href="message.html"><input class="account" type="submit" value="Submit"></a>
+                  <input class="account" type="submit" value="Submit">
                 </form>
-              </div>
+            </div>
         </section>
     </main>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            window.location.href = 'message.html'; // Redirect to message.html
+        });
+    </script>
 </body>
 </html>
-
-<!-- add  -->
