@@ -1,0 +1,173 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8e0e0;
+}
+
+header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
+
+.logo {
+    font-size: 24px;
+    color: #00a36c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.account {
+    align-items: center;
+    gap: 10px;
+}
+
+.account button {
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+}
+
+.exchange-form {
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.exchange-form .container {
+    max-width: 600px;
+    text-align: left;
+    background-color: #f8e0e0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exchange-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00a36c;
+}
+
+.exchange-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exchange-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.exchange-form input,
+.exchange-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00a36c;
+    border-radius: 5px;
+    outline: none;
+}
+
+.exchange-form button {
+    background-color: #00a36c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+}
+
+.exchange-form #result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8e0e0;
+    margin-top: auto;
+}
+
+@media (max-width: 992px) {
+    .exchange-form h2 {
+        font-size: 28px;
+    }
+
+    .exchange-form label {
+        font-size: 16px;
+    }
+
+    .exchange-form input,
+    .exchange-form select,
+    .exchange-form button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .exchange-form {
+        padding: 50px 10px;
+    }
+
+    .exchange-form h2 {
+        font-size: 24px;
+    }
+
+    .exchange-form label {
+        font-size: 14px;
+    }
+
+    .exchange-form input,
+    .exchange-form select,
+    .exchange-form button {
+        font-size: 12px;
+    }
+
+    .exchange-form #result {
+        font-size: 16px;
+    }
+}

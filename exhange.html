@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naijaxchange - International Payments</title>
+    <link rel="stylesheet" href="css/exchange.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.jpeg"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">Naijaxchange</div>
+            <nav>
+                <ul>
+                    <li><a href="navigation/product.html">Products</a></li>
+                    <li><a href="navigation/aboutus.html">About Us</a></li>
+                    <li><a href="navigation/contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="exchange-form">
+                <div class="container">
+                    <h2>Money Exchange</h2>
+                    <form id="exchangeForm">
+                        <label for="amount">Enter Amount in $:</label>
+                        <input type="number" id="amount" placeholder="Enter value" required>
+
+                        <label for="bank">Select Bank:</label>
+                        <select id="bank" required>
+                            <option value="" disabled selected>Select your bank</option>
+                            <option value="Guarantee Trust Bank">Guarantee Trust Bank</option>
+                            <option value="First Bank">First Bank</option>
+                            <option value="UBA Bank">UBA Bank</option>
+                        </select>
+
+                        <label for="account-number">Enter Account Number:</label>
+                        <input type="text" id="account-number" placeholder="Enter account number" required>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p id="result"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Naijaxchange</p>
+            <a href="https://x.com/seunmolz"><img src="images/icon-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/icon-linkedin.png" alt="LinkedIn"></a>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('exchangeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let amount = document.getElementById('amount').value;
+            let bank = document.getElementById('bank').value;
+            let accountNumber = document.getElementById('account-number').value;
+
+            if(amount && bank && accountNumber) {
+                let multipliedAmount = amount * 1000;
+                let result = document.getElementById('result');
+
+                result.innerText = `You have successfully sent $${multipliedAmount} to ${bank}, Account No: ${accountNumber} at the rate of $1 - N1000.`;
+                
+                // Add fade-out animation
+                result.classList.add('fade-out');
+
+                // Clear form fields after submission
+                document.getElementById('exchangeForm').reset();
+
+                // Remove the message after fade-out animation
+                setTimeout(() => {
+                    result.innerText = '';
+                    result.classList.remove('fade-out');
+                }, 9000);
+            }
+        });
+    </script>
+</body>
+</html>
